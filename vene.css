@@ -26,7 +26,7 @@ header{
     flex-grow: 1;
 }
 #nav{
-    flex-grow: .5;
+    flex-grow: .4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,7 @@ a{
     color: #ffffff;
     text-decoration: none;
     margin: 0;
+    padding: 5%;
 }
 h1{
     font-family: 'Ubuntu', sans-serif;
@@ -78,15 +79,16 @@ main{
     -webkit-overflow-scrolling: touch;
     }
 .box{
+    background-color:#ccc;
     width: 100%;
     padding:50px;
     height:600px;
-    -webkit-columns: 300px 8;
+    -webkit-columns: 300px;
     
         
 }
 .content{
-    background-color:#ccc;
+    
     margin:10px auto;
     z-index: 3;
 }
@@ -106,4 +108,44 @@ img.bg{
     left: 40%;
     margin-left: -800px; 
   }
+}
+@media screen and (max-width: 850px) {
+    a{
+     font-size: 35px;   
+    }
+    #title{
+    flex-basis:60px;
+    min-width: 250px;
+    }
+    h1{
+    font-size: 45px;
+    }
+    hr{
+     width: 210px;   
+    }
+    h2{
+    font-size: 15px;  
+    }
+}
+@media screen and (max-width: 775px) {
+    a{
+     font-size: 30px;   
+    }
+}
+@media screen and (max-width: 700px) {
+    a{
+     font-size: 25px;   
+    }
+    h1{
+    font-size: 35px;
+    }
+    hr{
+     width: 170px; 
+    }
+    h2{
+      
+    }
+}
+@media screen and (max-width: 600px) {
+    
 }
