@@ -64,14 +64,12 @@ h2{
     margin:0 auto;
 }
 
-main{
-   
-}
+
 
 .container {
     position: relative;
-    width:5000px;
-    height:700px;
+    width:500%;
+    max-width: 6500px;
     top:130px;
     margin: 0px;
     padding:10px;
@@ -81,25 +79,10 @@ main{
 .box{
     background-color:#ccc;
     opacity: .85;
-    width: 100%;
     padding:10px;
     padding-left: 35px;
     height:700px;
          
-}
-h3{
-   font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
-    color: #ffffff;
-    margin:0 auto; 
-    z-index: 11;
-    margin-bottom: 20px;
-}
-h4{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    margin:0 auto; 
 }
 .content{
     font-family: 'Ubuntu', sans-serif;
@@ -108,18 +91,18 @@ h4{
     margin:10px auto;
     z-index: 3;
     display: flex;
+    justify-content: flex-start;
     opacity: 1;
 }
 .section{
-   flex-grow: 1;
-    -webkit-columns: 450px;
+    -webkit-columns: 300px 3;
     -webkit-column-gap: 80px;
     -webkit-column-rule:;
     margin-right: 10px;
-    border-left: 1px solid #000000;
-    padding-left: 15px;
     margin-top: 55px;
-    height: 620px;
+    padding-left: 15px;
+    max-height: 620px;
+    overflow-y: hidden;
 }
 
 .page-space{
@@ -128,7 +111,6 @@ h4{
 }
 .intro{
 
-    
 }
 
 .history{
@@ -144,7 +126,21 @@ h4{
 
 
 
-
+h3{
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin:0 auto; 
+    z-index: 11;
+    margin-bottom: 20px;
+    height: 550px;
+}
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin:0 auto; 
+}
 p{
     margin: 5px auto;
 }
@@ -190,7 +186,7 @@ p{
   }
 }
 @media screen and (max-width: 850px) {
-    a{
+    .menu a{
      font-size: 35px;   
     }
     #title{
@@ -208,12 +204,12 @@ p{
     }
 }
 @media screen and (max-width: 775px) {
-    a{
+    .menu a{
      font-size: 30px;   
     }
 }
 @media screen and (max-width: 700px) {
-    a{
+    .menu a{
      font-size: 25px;   
     }
     h1{
