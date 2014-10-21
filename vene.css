@@ -1,6 +1,7 @@
 body{
     margin:0;
     background-color: #000000;
+    font-family: serif;
 }
 
 header{
@@ -15,7 +16,6 @@ header{
 }
 #title{
     flex-grow: 1;
-    flex-basis:40px;
     min-width: 266px;
     text-align: center;
 }
@@ -36,7 +36,7 @@ header{
     margin: 0;
     
 }
-a{
+.menu a{
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     color: #ffffff;
@@ -70,7 +70,7 @@ main{
 
 .container {
     position: relative;
-    width:7000px;
+    width:5000px;
     height:700px;
     top:130px;
     margin: 0px;
@@ -80,19 +80,96 @@ main{
     }
 .box{
     background-color:#ccc;
+    opacity: .85;
     width: 100%;
-    padding:50px;
-    height:600px;
-    -webkit-columns: 300px;
-    
-        
+    padding:10px;
+    padding-left: 35px;
+    height:700px;
+         
+}
+h3{
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin:0 auto; 
+    z-index: 11;
+    margin-bottom: 20px;
+}
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin:0 auto; 
 }
 .content{
-    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #000000;
     margin:10px auto;
     z-index: 3;
+    display: flex;
+    opacity: 1;
 }
-img.bg{
+.section{
+   flex-grow: 1;
+    -webkit-columns: 450px;
+    -webkit-column-gap: 80px;
+    -webkit-column-rule:;
+    margin-right: 10px;
+    border-left: 1px solid #000000;
+    padding-left: 15px;
+    margin-top: 55px;
+    height: 620px;
+}
+
+.page-space{
+    height: 50px;
+    width: auto;
+}
+.intro{
+
+    
+}
+
+.history{
+    
+}
+.people{
+
+}
+.politics{
+    
+}
+
+
+
+
+
+p{
+    margin: 5px auto;
+}
+.column-image{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 653px;
+    
+}
+.larger{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width:700px;
+    
+    
+
+}
+
+
+
+
+
+
+.backgrnd{
     z-index: -5;
     min-height: 100%;
     min-width: 1024px;
@@ -102,6 +179,9 @@ img.bg{
     left: 0;
     margin-left: -385px;
 }
+
+
+
 
 @media screen and (max-width: 1024px) { 
   img.bg {
@@ -144,6 +224,9 @@ img.bg{
     }
     h2{
       
+    }
+    #title{
+     min-width: 220px;   
     }
 }
 @media screen and (max-width: 600px) {
